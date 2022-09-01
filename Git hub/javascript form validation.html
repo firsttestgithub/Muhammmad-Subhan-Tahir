@@ -1,0 +1,108 @@
+<!Doctype html>
+
+
+<html>
+<head>
+
+
+<style type="text/css">
+body{
+background-color:#3498db;
+display:flex;
+justify-content:center;
+align-items:center;
+height:80vh;
+}
+
+#container{
+padding:50px;
+background-color:white;
+text-align:center;
+
+}
+
+input{
+padding:10px;
+width:200px;
+margin:10px; 0px;
+}
+input[type="submit"]{
+width:220px;
+background-color:#3498db;
+border: 0;
+color:white;
+font-size:20px;
+}
+
+h2{
+color:DeepPink;
+margin: 0px; 0px; 10px; 0px;
+}
+
+.error{
+color:red;
+margin:0px; 24px; 0px; 4px;	
+text-align:left;
+}
+</style>
+
+</head>
+ 
+<body>
+
+<div id="container">
+<h2>Login</h2>
+<form action="javascript border.html" onsubmit="return validateForm()">
+<input type="text" placeholder="username" id="userName"></input>
+<p id="userError" class="error"></p>
+
+<input type="password" placeholder="password" id="passName"></input>
+<p id="passError" class="error"></p>
+
+<input type="submit" value="submit"></input>
+</div>
+<script type="text/javascript">
+
+var user = document.getElementById("userName");
+
+var pass = document.getElementById("passName");
+
+var flag = 4;
+function validateForm (){
+if(user.value == ""){
+document.getElementById("userError").innerHTML = "fill the username";
+flag = 0;
+}
+
+else if(user.value.length < 3 ){
+document.getElementById("userError").innerHTML = "username must be eight letters";
+flag = 0;
+}
+
+else{
+document.getElementById("userError").innerHTML = "";
+flag = 4;
+}
+
+if(pass.value == "" ){
+document.getElementById("passError").innerHTML = "fill the password";
+flag = 0;
+}
+
+else{
+document.getElementById("passError").innerHTML = "";
+flag = 4;
+}
+if(flag){
+return true;
+}
+
+else{
+return false;
+}
+}
+</script>
+
+</body>
+
+</html>
