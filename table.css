@@ -1,0 +1,65 @@
+td{
+    border-collapse:collapse;
+    border: 2px solid white;
+    cursor:pointer;
+    border-radius: 8px;
+    text-align: center;
+    padding:3px;
+    
+}
+
+.one{
+    background-color: #e2eeff;
+    color:#126ef1;
+}
+
+.two{
+  background-color: #ffe7e7; 
+  color :#d60024;
+}
+
+.three{
+background-color: #d8f8ff;
+color:#00758c;
+}
+
+.four{
+    background-color: #ffe7eb;
+    color:#d43e6a;
+}
+
+.five{
+    background-color: #dffeff;
+    color:#1d3355;
+}
+
+.six{
+    background-color: #ffe6d4;
+    color:#c73221; 
+}
+
+.seven{
+    background-color:#d6f9e8;
+    color:#002c00; 
+}
+     
+.eight{
+    background-color: #e7e7ea;
+    color:#423752;
+}
+
+.nine{
+    background-color:#fef7e0;
+    color:#aea1ab;
+}
+
+sup{
+   position:relative;
+   bottom:20px;
+   right:5px; 
+}
+
+span{
+    
+    font-size:43px;
+}
